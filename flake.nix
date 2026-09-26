@@ -2,7 +2,7 @@
   description = "A simple NixOS flake";
 
   inputs = {
-    # NixOS official package source, using the nixos-26.05 branch here
+    # NixOS official package source, using the nixos-unstable branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
