@@ -100,6 +100,10 @@
     ];
   };
 
+  nix.extraOptions = ''
+    !include /etc/nix/access-tokens.conf
+  '';
+
   services.udev.extraRules = ''
     SUBSYSTEM=="usb", ATTRS{idVendor}=="0416", ATTRS{idProduct}=="5020", MODE="0666"
     KERNEL=="hidraw*", ATTRS{idVendor}=="0416", ATTRS{idProduct}=="5020", MODE="0666"
@@ -181,7 +185,7 @@
     tree
     smartmontools
     docker-compose
-       # For lazyvim (LSPs/formatters live in neovim.nix)
+    # For lazyvim (LSPs/formatters live in neovim.nix)
     fzf
     lazygit
     nerd-fonts.jetbrains-mono
