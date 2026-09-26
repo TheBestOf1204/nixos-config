@@ -307,7 +307,6 @@
     # rebuild failing and maybe not needed anymore; last tried at 19-30_09-14-2026
     #mysql-workbench
     dbeaver-bin
-    jetbrains.rider
     # temporare remove because insecure
     #jetbrains.pycharm-oss
     sqlite
