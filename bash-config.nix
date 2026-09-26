@@ -11,6 +11,7 @@
       ff = "fastfetch";
       hf = "hyfetch";
       open = "xdg-open";
+      lg = "lazygit";
 
       # git shorts
       gst = "git status";
