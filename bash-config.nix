@@ -12,6 +12,7 @@
       hf = "hyfetch";
       open = "xdg-open";
       lg = "lazygit";
+      v = "neovim";
 
       # git shorts
       gst = "git status";
