@@ -123,7 +123,8 @@
   #nh
   programs.nh.enable = true;
 
-  programs.starship.enable = true;
+  # Unused becasuse declared in home-manager
+  #programs.starship.enable = true;
 
   # Install Steam
   programs.steam = {
