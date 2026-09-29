@@ -30,7 +30,14 @@
     interactiveShellInit = ''
       eval "$(${pkgs.pay-respects}/bin/pay-respects bash)"
       # [ "$SHLVL" -eq 1 ] && ${pkgs.fastfetch}/bin/fastfetch
-      [ "$SHLVL" -eq 1 ] && ${pkgs.hyfetch}/bin/hyfetch
+      # [ "$SHLVL" -eq 1 ] && ${pkgs.hyfetch}/bin/hyfetch
+      # Once per terminal; nested shells (bash, nix-shell, nix develop) inherit
+      # FETCH_SHOWN and skip. SHLVL is unreliable under niri because niri-session
+      # exports its own SHLVL into the whole session.
+      if [ -z "$FETCH_SHOWN" ]; then
+        export FETCH_SHOWN=1
+        ${pkgs.hyfetch}/bin/hyfetch
+      fi
     '';
     # custom terminal prompt, can be used if liked
     # promptInit = ''
