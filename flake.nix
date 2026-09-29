@@ -6,6 +6,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager"; # master tracks unstable
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell/stable";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -29,6 +34,7 @@
             home-manager.backupFileExtension = "hm-bak"; # see gotchas
             home-manager.users.linus = import ./home.nix;
           }
+          inputs.dms.nixosModules.dank-material-shell
         ];
       };
     };
