@@ -221,7 +221,7 @@
     progress
     fd
     pay-respects
-    helix
+    # helix
     gtop
     btop
     speedtest-cli
