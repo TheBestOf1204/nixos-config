@@ -11,7 +11,7 @@
       ff = "fastfetch";
       hf = "hyfetch";
       open = "xdg-open";
-      lg = "lazygit";
+      gg = "lazygit";
       v = "nvim";
 
       # git shorts
