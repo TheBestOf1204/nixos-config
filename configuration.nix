@@ -195,6 +195,7 @@
     # For lazyvim (LSPs/formatters live in neovim.nix)
     fzf
     lazygit
+    superfile
     nerd-fonts.jetbrains-mono
     nerd-fonts.hack
     fira-code
