@@ -98,6 +98,7 @@
       "networkmanager"
       "wheel"
       "docker"
+      "input"
     ];
     packages = with pkgs; [
       kdePackages.kate
@@ -241,6 +242,7 @@
     graphviz
     gsettings-desktop-schemas
     gtk3
+    libinput
 
     # temporare disable for update
     #f3d
