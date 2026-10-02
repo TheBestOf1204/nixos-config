@@ -21,6 +21,12 @@
   # so not needed and turned off
   services.gnome.gcr-ssh-agent.enable = false;
 
+  services.displayManager.dms-greeter = {
+    enable = true;
+    compositor.name = "niri"; # the greeter runs inside niri
+    configHome = "/home/linus"; # takes your DMS wallpaper and theme for the login screen
+  };
+
   qt.platformTheme = "kde";
 
   # X11 apps in niri
