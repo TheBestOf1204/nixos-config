@@ -11,6 +11,11 @@
       url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    superfile = {
+      url = "github:yorukot/superfile/v1.6.0"; # or the latest release tag
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -23,6 +28,7 @@
     {
       # Please replace my-nixos with your hostname
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
         modules = [
           # Import the previous configuration.nix we used,
           # so the old configuration file still takes effect

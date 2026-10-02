@@ -13,6 +13,7 @@
       open = "xdg-open";
       gg = "lazygit";
       v = "nvim";
+      sf = "superfile";
 
       # git shorts
       gst = "git status";

@@ -11,6 +11,7 @@
     ./bash-config.nix
     ./neovim.nix
     ./niri-dms.nix
+    ./superfile.nix
 
     # some fix for stupid speakers not working, audio-fix is fully done with ai because i didn't bother
     # messing with this stupid huawei machine. if you don't have this issue, there's no reason to use it.
@@ -198,7 +199,6 @@
     # For lazyvim (LSPs/formatters live in neovim.nix)
     fzf
     lazygit
-    superfile
     nerd-fonts.jetbrains-mono
     nerd-fonts.hack
     fira-code
