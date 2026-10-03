@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   home.stateVersion = "26.11";
 
@@ -20,6 +25,12 @@
 
   programs.starship.enable = true;
   xdg.configFile."starship.toml".source = ./starship.toml;
+
+  programs.yazi = {
+    enable = true;
+    package = inputs.yazi.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    enableBashIntegration = true;
+  };
 
   programs.bash.enable = true;
 }

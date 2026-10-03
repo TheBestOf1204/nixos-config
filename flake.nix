@@ -13,9 +13,14 @@
     };
 
     superfile = {
-      url = "github:yorukot/superfile/v1.6.0"; # or the latest release tag
+      url = "github:yorukot/superfile/v1.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    yazi = {
+      url = "github:sxyazi/yazi";
+    };
+
   };
 
   outputs =
@@ -37,6 +42,7 @@
           {
             home-manager.useGlobalPkgs = true; # reuse system pkgs (+ allowUnfree, overlays)
             home-manager.useUserPackages = true; # install to /etc/profiles instead of ~/.nix-profile
+            home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.backupFileExtension = "hm-bak"; # see gotchas
             home-manager.users.linus = import ./home.nix;
           }
