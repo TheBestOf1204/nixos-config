@@ -17,9 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    yazi = {
-      url = "github:sxyazi/yazi";
-    };
+    yazi.url = "github:sxyazi/yazi";
 
   };
 
@@ -40,11 +38,13 @@
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true; # reuse system pkgs (+ allowUnfree, overlays)
-            home-manager.useUserPackages = true; # install to /etc/profiles instead of ~/.nix-profile
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.backupFileExtension = "hm-bak"; # see gotchas
-            home-manager.users.linus = import ./home.nix;
+            home-manager = {
+              useGlobalPkgs = true; # reuse system pkgs (+ allowUnfree, overlays)
+              useUserPackages = true; # install to /etc/profiles instead of ~/.nix-profile
+              extraSpecialArgs = { inherit inputs; };
+              backupFileExtension = "hm-bak"; # see gotchas
+              users.linus = import ./home.nix;
+            };
           }
           inputs.dms.nixosModules.dank-material-shell
         ];
