@@ -134,6 +134,8 @@
   #nh
   programs.nh.enable = true;
 
+  programs.gpu-screen-recorder.enable = true;
+
   # Unused becasuse declared in home-manager
   #programs.starship.enable = true;
 
@@ -249,6 +251,11 @@
     gsettings-desktop-schemas
     gtk3
     libinput
+
+    wf-recorder
+    img2pdf
+    tesseract
+    zbar
 
     # temporare disable for update
     #f3d
