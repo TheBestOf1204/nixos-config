@@ -132,7 +132,10 @@
   programs.firefox.enable = true;
 
   #nh
-  programs.nh.enable = true;
+  programs.nh = {
+    enable = true;
+    flake = "/home/linus/etc/nixos/"; # adjust to where your flake lives
+  };
 
   programs.gpu-screen-recorder.enable = true;
 
