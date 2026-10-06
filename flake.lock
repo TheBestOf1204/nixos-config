@@ -189,7 +189,9 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "superfile": "superfile",
-        "yazi": "yazi"
+        "yazi": "yazi",
+        "yazi-flavors": "yazi-flavors",
+        "yazi-plugins": "yazi-plugins"
       }
     },
     "rust-overlay": {
@@ -284,6 +286,38 @@
       "original": {
         "owner": "sxyazi",
         "repo": "yazi",
+        "type": "github"
+      }
+    },
+    "yazi-flavors": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790697555,
+        "narHash": "sha256-E1OUF1+mT0V3crVxkewG2Y7hRu8fO+0oRl6NlINmw+o=",
+        "owner": "yazi-rs",
+        "repo": "flavors",
+        "rev": "1183892c904f7f0efdf4473e856ed308b7bea98d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yazi-rs",
+        "repo": "flavors",
+        "type": "github"
+      }
+    },
+    "yazi-plugins": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790956605,
+        "narHash": "sha256-/BNGoWziHIZ9i+RoTWGq/q3ZowNCyHGBOWiz8v2/vOE=",
+        "owner": "yazi-rs",
+        "repo": "plugins",
+        "rev": "6229767f7fef39a2a78f5cee9122cc4dfb43f327",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yazi-rs",
+        "repo": "plugins",
         "type": "github"
       }
     }

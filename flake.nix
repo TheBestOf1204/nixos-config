@@ -18,7 +18,14 @@
     };
 
     yazi.url = "github:sxyazi/yazi";
-
+    yazi-plugins = {
+      url = "github:yazi-rs/plugins";
+      flake = false;
+    };
+    yazi-flavors = {
+      url = "github:yazi-rs/flavors";
+      flake = false;
+    };
   };
 
   outputs =
