@@ -5,7 +5,10 @@
   ...
 }:
 {
-  imports = [ ./yazi.nix ];
+  imports = [
+    ./yazi.nix
+    ./superfile.nix
+  ];
 
   home.stateVersion = "26.11";
 
