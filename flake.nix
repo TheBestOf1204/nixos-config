@@ -26,6 +26,10 @@
       url = "github:yazi-rs/flavors";
       flake = false;
     };
+    starship-yazi = {
+      url = "github:Rolv-Apneseth/starship.yazi";
+      flake = false;
+    };
   };
 
   outputs =

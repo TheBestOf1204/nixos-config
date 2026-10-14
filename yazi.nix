@@ -1,4 +1,5 @@
 {
+  config,
   pkgs,
   lib,
   inputs,
@@ -79,17 +80,20 @@
           type = lib.generators.mkLuaInline "ui.Border.ROUNDED";
         };
       };
+
+      starship = {
+        package = inputs.starship-yazi;
+        setup = true;
+      };
     };
 
     flavors.catppuccin-mocha = "${inputs.yazi-flavors}/catppuccin-mocha.yazi";
 
     theme = {
       flavor = {
-        dark = "catppuccin-mocha";
-        light = "catppuccin-mocha";
+        dark = "dms";
+        light = "dms";
       };
-
-      app.overall.bg = "#1e1e2e";
 
       # your own overrides win over the flavor
       git = {
@@ -98,6 +102,19 @@
       };
     };
   };
+
+  # tell matugen (via DMS) about the template
+  # tell DMS about the template (same mechanism as your superfile one)
+  xdg.configFile."matugen/dms/configs/yazi.toml".text = ''
+    [templates.yazi]
+    input_path = '${./matugen/yazi-flavor.toml}'
+    output_path = '${config.xdg.configHome}/yazi/flavors/dms.yazi/flavor.toml'
+  '';
+
+  # syntax highlighting theme for code previews (a flavor ships one);
+  # side effect: makes flavors/dms.yazi a real, writable directory
+  xdg.configFile."yazi/flavors/dms.yazi/tmtheme.xml".source =
+    "${inputs.yazi-flavors}/catppuccin-mocha.yazi/tmtheme.xml";
 
   home.packages = with pkgs; [
     ffmpeg

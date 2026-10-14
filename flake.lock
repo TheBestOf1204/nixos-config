@@ -188,6 +188,7 @@
         "dms": "dms",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "starship-yazi": "starship-yazi",
         "superfile": "superfile",
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
@@ -212,6 +213,22 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "starship-yazi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786993461,
+        "narHash": "sha256-Jvoc/7YaOOppu8K2lJaVgiuBIyanRHHjEA6ZvnrFtiQ=",
+        "owner": "Rolv-Apneseth",
+        "repo": "starship.yazi",
+        "rev": "ea92cf49380466f07231c952b409831e6afd2156",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Rolv-Apneseth",
+        "repo": "starship.yazi",
         "type": "github"
       }
     },
