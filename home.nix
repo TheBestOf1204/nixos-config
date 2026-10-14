@@ -29,4 +29,9 @@
   xdg.configFile."starship.toml".source = ./starship.toml;
 
   programs.bash.enable = true;
+
+  xdg.configFile."tridactyl/tridactylrc".text = ''
+    bind J tabnext
+    bind K tabprev
+  '';
 }

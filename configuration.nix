@@ -129,7 +129,10 @@
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    nativeMessagingHosts.packages = [ pkgs.tridactyl-native ];
+  };
 
   #nh
   programs.nh = {
