@@ -8,6 +8,7 @@
   imports = [
     ./yazi.nix
     ./superfile.nix
+    ./scripts/dn.nix
   ];
 
   home.stateVersion = "26.11";
