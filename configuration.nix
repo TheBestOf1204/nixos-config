@@ -312,14 +312,14 @@
     qbittorrent
     vopono
     spotify
-    librespot
-    ncspot
-    spotify-qt
+    # librespot
+    # ncspot
+    # spotify-qt
     # Alternative spotify GUIS but isnt actually spotify
     # so dont use if spotify is wanted
-    spotube
-    spotiflac
-    psst
+    # spotube
+    # spotiflac
+    # psst
     chatterino7
     xournalpp
     obsidian
@@ -343,6 +343,9 @@
     vscodium
     nodejs
     unityhub
+
+    # R
+    # positron-bin
 
     # ai
     ollama
