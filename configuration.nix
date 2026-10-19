@@ -268,10 +268,10 @@
 
     # school stuff
 
-    # removed for safety when upgrading
     geogebra6
-    # removed for safety when upgrading
     teams-for-linux
+    R
+    positron-bin
 
     fastfetch
     hyfetch
@@ -343,9 +343,6 @@
     vscodium
     nodejs
     unityhub
-
-    # R
-    # positron-bin
 
     # ai
     ollama
