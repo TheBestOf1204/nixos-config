@@ -270,8 +270,6 @@
 
     geogebra6
     teams-for-linux
-    R
-    positron-bin
 
     fastfetch
     hyfetch

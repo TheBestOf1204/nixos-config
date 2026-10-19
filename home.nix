@@ -4,6 +4,16 @@
   inputs,
   ...
 }:
+
+let
+  myRPackages = with pkgs.rPackages; [
+    ggplot2
+    dplyr
+    data_table
+    tidyverse
+  ];
+in
+
 {
   imports = [
     ./yazi.nix
@@ -16,6 +26,8 @@
   home.packages = with pkgs; [
     ripgrep
     fd
+    (rstudioWrapper.override { packages = myRPackages; })
+    (rWrapper.override { packages = myRPackages; })
   ];
 
   programs.bat.enable = true;
