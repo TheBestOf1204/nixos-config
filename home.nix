@@ -28,6 +28,8 @@ in
     fd
     (rstudioWrapper.override { packages = myRPackages; })
     (rWrapper.override { packages = myRPackages; })
+    imv
+    jq
   ];
 
   programs.bat.enable = true;
