@@ -30,6 +30,11 @@
       url = "github:Rolv-Apneseth/starship.yazi";
       flake = false;
     };
+
+    scripts = {
+      url = "path:/home/linus/Coding/scripts";
+      flake = false;
+    };
   };
 
   outputs =

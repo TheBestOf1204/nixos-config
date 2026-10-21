@@ -1,6 +1,6 @@
 # Home Manager module that installs `dn`, a menu for the dotnet CLI.
 # Import it from home.nix:   imports = [ ./scripts/dn.nix ];
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = [
     (pkgs.writeShellApplication {
@@ -17,7 +17,7 @@
         gnused
         gawk
       ];
-      text = builtins.readFile ./dn.sh;
+      text = builtins.readFile "${inputs.scripts}/dn.sh";
     })
   ];
 }

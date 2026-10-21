@@ -188,6 +188,7 @@
         "dms": "dms",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "scripts": "scripts",
         "starship-yazi": "starship-yazi",
         "superfile": "superfile",
         "yazi": "yazi",
@@ -214,6 +215,19 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "type": "github"
+      }
+    },
+    "scripts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1792611374,
+        "narHash": "sha256-NO4GOGdhwak3zl1Psbi09BeKktcYRcskTwMVnl2OJ1o=",
+        "path": "/home/linus/Coding/scripts",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/linus/Coding/scripts",
+        "type": "path"
       }
     },
     "starship-yazi": {
