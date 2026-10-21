@@ -64,8 +64,9 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "at";
-    variant = "nodeadkeys";
+    layout = "us,at";
+    variant = "altgr-intl,nodeadkeys";
+    options = "grp:lalt_lshift_toggle"; # leftAlt+leftShift switches layouts
   };
 
   # Enable CUPS to print documents.
