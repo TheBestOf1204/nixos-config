@@ -14,6 +14,7 @@
       gg = "lazygit";
       v = "nvim";
       sf = "superfile";
+      "l1" = "ls -a1F";
 
       # git shorts
       gst = "git status";
