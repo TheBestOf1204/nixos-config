@@ -15,6 +15,7 @@
       v = "nvim";
       sf = "superfile";
       "l1" = "ls -a1F";
+      pp = "ping 1.1.1.1";
 
       # git shorts
       gst = "git status";
