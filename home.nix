@@ -19,6 +19,7 @@ in
     ./yazi.nix
     ./superfile.nix
     ./scripts/dn.nix
+    ./dux-files.nix
   ];
 
   home.stateVersion = "26.11";

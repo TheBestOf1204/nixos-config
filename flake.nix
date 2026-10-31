@@ -12,6 +12,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    dux-files = {
+      url = "github:duxlabs-dev/dux-files";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     superfile = {
       url = "github:yorukot/superfile/v1.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
