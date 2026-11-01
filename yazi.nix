@@ -76,9 +76,7 @@
       full-border = {
         package = "${inputs.yazi-plugins}/full-border.yazi";
         setup = true;
-        settings = {
-          type = lib.generators.mkLuaInline "ui.Border.ROUNDED";
-        };
+        settings.set = "rounded"; # or "plain"
       };
 
       starship = {
