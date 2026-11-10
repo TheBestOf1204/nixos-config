@@ -181,7 +181,7 @@
   };
 
   # Install flatpak
-  services.flatpak.enable = true;
+  services.flatpak.enable = false;
 
   programs.git.enable = true;
 
@@ -347,7 +347,7 @@
     ollama
 
     # KDE
-    kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
+    #kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
     kdePackages.kcalc # Calculator
     kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
     kdePackages.kclock # Clock app
