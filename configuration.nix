@@ -66,7 +66,7 @@
   services.xserver.xkb = {
     layout = "us,at";
     variant = "altgr-intl,nodeadkeys";
-    options = "grp:lalt_lshift_toggle"; # leftAlt+leftShift switches layouts
+    options = "grp:alt_rshift_toggle"; # leftAlt+leftShift switches layouts
   };
 
   # Enable CUPS to print documents.
