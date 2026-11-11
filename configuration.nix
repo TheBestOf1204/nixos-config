@@ -122,9 +122,13 @@
       "nix-command"
       "flakes"
     ];
-    extra-substituters = [ "https://yazi.cachix.org" ];
+    extra-substituters = [
+      "https://yazi.cachix.org"
+      "https://claude-code.cachix.org"
+    ];
     extra-trusted-public-keys = [
       "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
+      "claude-code.cachix.org-1:YeXf2aNu7UTX8Vwrze0za1WEDS+4DuI2kVeWEE4fsRk="
     ];
   };
 

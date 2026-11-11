@@ -36,6 +36,8 @@
       flake = false;
     };
 
+    claude-code.url = "github:sadjow/claude-code-nix";
+
     scripts = {
       url = "path:/home/linus/Coding/scripts";
       flake = false;

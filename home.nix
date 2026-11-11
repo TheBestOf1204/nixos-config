@@ -31,6 +31,7 @@ in
     (rWrapper.override { packages = myRPackages; })
     imv
     jq
+    inputs.claude-code.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   programs.bat.enable = true;
