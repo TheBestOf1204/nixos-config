@@ -314,7 +314,8 @@
     chromium
     chromium-bsu
     qbittorrent
-    vopono
+    # Temporare disable because build failure
+    #vopono
     spotify
     # librespot
     # ncspot
