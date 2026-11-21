@@ -56,6 +56,14 @@
         desc = "Go to NixOS config";
       }
       {
+        on = [
+          "g"
+          "7"
+        ];
+        run = "cd ~/School/7-8-semester/";
+        desc = "Go to School semester 7-8 config";
+      }
+      {
         on = "l";
         run = "plugin smart-enter";
         desc = "Enter dir or open file";
