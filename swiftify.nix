@@ -26,13 +26,13 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "swiftify";
-  version = "0.25.1";
+  version = "0.25.1-unstable-2026-11-15";
 
   src = fetchFromGitHub {
     owner = "swiftify-org";
     repo = "swiftify";
-    tag = "v${finalAttrs.version}";
-    hash = "sha256-W7R3w0ogX3JvBlEshKkrAzgNbzwrOfqusIBgAQkqVDY=";
+    rev = "21e6d0e2fd08c59a87bc389c1c8421b27c2b5c98";
+    hash = "sha256-a4tGaEXlppaOo2R24WNd/5tU7wOjB8Wcp9J8W1QD7KE=";
   };
 
   cargoRoot = "spotify-core";
